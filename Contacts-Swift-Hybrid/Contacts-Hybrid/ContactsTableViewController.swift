@@ -22,16 +22,16 @@ class ContactsTableViewController: UITableViewController {
 	// MARK: UITableViewDataSource methods
 	
 	override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return contactsController.contacts.count
+        return contactsController.contactCount
 	}
 	
 	override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 		let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCell", for: indexPath)
         
-        let contact = contactsController.contacts[indexPath.row]
-        
-        cell.textLabel?.text = contact.name
-        cell.detailTextLabel?.text = contact.relationship
+//        let contact = contactsController.contact.
+//        
+//        cell.textLabel?.text = contact.name
+//        cell.detailTextLabel?.text = contact.relationship
 		
 		return cell
 	}
