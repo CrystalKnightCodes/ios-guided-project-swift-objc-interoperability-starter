@@ -29,11 +29,28 @@ class PersonController: NSObject {
         
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             if let error = error {
-                return completion(nil, error)
+                DispatchQueue.main.async {
+                     return completion(nil, error)
+                }
             }
             
             guard let data = data else {
+                DispatchQueue.main.async {
                 return completion(nil, APIError.DataNilError)
+            }
+                return
+            }
+            do {
+                guard let dictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+                    throw APIError.JSONDecodeError
+                }
+                
+                guard let personDictionaries = dictionary["results"] as? [[String: Any]] else {
+                    throw APIError.JSONMissingResults
+            }
+                
+            } catch {
+                
             }
             
             // TODO: Decode the JSON
