@@ -23,21 +23,17 @@
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-	// TODO: Implement number of rows
-	
-	return 0;
+
+    return self.people.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
+    LSIPersonTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonCell" forIndexPath:indexPath];
 	
-	// TODO: Implement a custom cell named PersonTableViewCell.swift
-	
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonCell" forIndexPath:indexPath];
+    LSIPerson *person = [self.people objectAtIndex:indexPath.row];
     
-	// TODO: Set the cell to the current Person object
-	
+    cell.person = person;
 	
     return cell;
 }
