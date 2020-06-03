@@ -13,14 +13,14 @@ enum APIError: String, Error {
     case JSONDecodeError
     case JSONMissingResults
 }
-
+@objc(LSIPersonController)
 class PersonController: NSObject {
     // docs: https://lambdaswapi.herokuapp.com/people
     private let baseURL = URL(string: "https://lambdaswapi.herokuapp.com/api/people")!
+    @objc(sharedController)
     static let shared = PersonController()
     
-    // TODO: Add LSIPerson.h to bridging header
-    // TODO: Add PersonController.swift to target
+    @objc(searchForPeopleWithSearchTerm:completionHandler:)
     func searchForPeople(with searchTerm: String, completion: @escaping ([Person]?, Error?) -> Void) {
         var components = URLComponents(url: baseURL, resolvingAgainstBaseURL: true)!
         let searchItem = URLQueryItem(name: "search", value: searchTerm)
