@@ -7,6 +7,7 @@
 //
 
 #import "ContactsController.h"
+#import "Contacts_Hybrid-Swift.h"
 
 
 @interface ContactsController ()
@@ -21,7 +22,11 @@
 - (instancetype)init{
     if (self = [super init]) {
         _internalContacts = [[NSMutableArray alloc] init];
+        
+        Contact *contact = [[Contact alloc] initWithName:@"Crystal" relationship: @"Myself"];
+        [_internalContacts addObject:contact];
     }
+    
     return self;
 }
 
