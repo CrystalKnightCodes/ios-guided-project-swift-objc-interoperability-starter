@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BAA406C52487372600D9358A /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA406C42487372600D9358A /* Contact.swift */; };
-		BAA406C92487380E00D9358A /* ContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA406C82487380E00D9358A /* ContactsController.m */; };
+		BAA406C92487380E00D9358A /* LSIContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA406C82487380E00D9358A /* LSIContactsController.m */; };
 		BD0237D323DF91FB00065094 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0237D223DF91FB00065094 /* Main.storyboard */; };
 		BD36BDFB23A7F27B00ED64BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD36BDFA23A7F27B00ED64BD /* AppDelegate.swift */; };
 		BD36BDFD23A7F27B00ED64BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD36BDFC23A7F27B00ED64BD /* SceneDelegate.swift */; };
@@ -20,8 +20,8 @@
 /* Begin PBXFileReference section */
 		BAA406C42487372600D9358A /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		BAA406C62487380E00D9358A /* Contacts-Hybrid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Contacts-Hybrid-Bridging-Header.h"; sourceTree = "<group>"; };
-		BAA406C72487380E00D9358A /* ContactsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsController.h; sourceTree = "<group>"; };
-		BAA406C82487380E00D9358A /* ContactsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsController.m; sourceTree = "<group>"; };
+		BAA406C72487380E00D9358A /* LSIContactsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSIContactsController.h; sourceTree = "<group>"; };
+		BAA406C82487380E00D9358A /* LSIContactsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSIContactsController.m; sourceTree = "<group>"; };
 		BD0237D223DF91FB00065094 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BD36BDF723A7F27B00ED64BD /* Contacts-Hybrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contacts-Hybrid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD36BDFA23A7F27B00ED64BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 			children = (
 				BD36BDFA23A7F27B00ED64BD /* AppDelegate.swift */,
 				BAA406C42487372600D9358A /* Contact.swift */,
-				BAA406C72487380E00D9358A /* ContactsController.h */,
-				BAA406C82487380E00D9358A /* ContactsController.m */,
+				BAA406C72487380E00D9358A /* LSIContactsController.h */,
+				BAA406C82487380E00D9358A /* LSIContactsController.m */,
 				BD36BDFC23A7F27B00ED64BD /* SceneDelegate.swift */,
 				BD36BE1023A7F2E200ED64BD /* ContactsTableViewController.swift */,
 				BD0237D223DF91FB00065094 /* Main.storyboard */,
@@ -151,7 +151,7 @@
 			files = (
 				BAA406C52487372600D9358A /* Contact.swift in Sources */,
 				BD36BDFB23A7F27B00ED64BD /* AppDelegate.swift in Sources */,
-				BAA406C92487380E00D9358A /* ContactsController.m in Sources */,
+				BAA406C92487380E00D9358A /* LSIContactsController.m in Sources */,
 				BD36BE1123A7F2E200ED64BD /* ContactsTableViewController.swift in Sources */,
 				BD36BDFD23A7F27B00ED64BD /* SceneDelegate.swift in Sources */,
 			);
