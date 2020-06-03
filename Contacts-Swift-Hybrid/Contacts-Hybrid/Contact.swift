@@ -8,7 +8,7 @@
 
 import Foundation
 
-@objc
+@objc(LSIContact)
 //@objcmembers
 
 class Contact: NSObject {
